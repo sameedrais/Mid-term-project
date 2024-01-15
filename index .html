@@ -34,28 +34,72 @@
             list-style: none;
             margin: 0 23px;
         }
-        .left{ font-size: 1.2rem;}
-        .firstsection{
+        nav ul li a { text-decoration: none;
+        color: white;}
+        nav ul li a:hover{
+            color: rgb(153, 153, 241);
+        }
+
+
+        .left {
+            font-size: 1.4rem;
+            color: blueviolet;
+        }
+
+        .firstsection {
             display: flex;
             justify-content: space-around;
-            margin: 23px 0 ;
+            margin: 70px 0;
         }
-        .leftSection{
-    
+
+        .leftSection {
+
             width: 34px;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             margin: 110px 0;
         }
-        .firstsection div{ 
+
+        .firstsection div {
             width: 30%;
         }
-        .RightSection img{
-            width: 110% ;
-            margin: 80px 0 ;
+
+        .RightSection img {
+            width: 110%;
+            margin: 80px 0;
         }
-           .purple{
+
+        .purple {
             color: rgb(155, 94, 211);
-           }
+        
+        }
+        #element{
+            color: rgb(155, 94, 211);
+        
+        
+
+        }
+        
+        .footer{ display: flex;
+        background-color: rgb(45, 45, 117);
+    height: 20px;}
+        footer{
+            background-color: rgb(155, 94, 211);
+            height: 90px;
+            margin: 23px 22px ;
+
+        }
+    footer.footerrights{ text-align: center;
+
+
+        }
+        .button1{
+            padding: 8px;
+            background-color: rgb(155, 94, 211);
+            margin: 45px 30px;
+            border: 3px solid white;
+            font-size: 18px;
+        }
+        
     </style>
 </head>
 
@@ -66,11 +110,11 @@
             <div class="left">Syed M.Huzaifa's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li> <a href=/> Home</li> </a>
-                    <li> <a href=/>About</li> </a>
-                    <li> <a href=/> Services</li> </a>
-                    <li> <a href=/> Projects</li> </a>
-                    <li> <a href=/> Contact Me</li> </a>
+                    <li> <a href="/"> Home</li> </a>
+                    <li> <a href="/">About</li> </a>
+                    <li> <a href="/"> Services</li> </a>
+                    <li> <a href="/"> Projects</li> </a>
+                    <li> <a href="/"> Contact Me</li> </a>
 
                 </ul>
             </div>
@@ -78,20 +122,41 @@
     </header>
     <main>
         <section class="firstsection">
-            <div class="leftSection"> Hy, My Name is <span class="purple">Syed Mohammad Huzaifa</span>  and I am a Passionate Web Developer </div>
+            <div class="leftSection"> Hy, My Name is <span class="purple">Syed Mohammad Huzaifa</span> and I am a
+                Passionate  &nbsp; &nbsp; &nbsp; &nbsp; <span id="element"></span>  <br>  <button class="button1"> Download Resume</button>
+                <button class="button1"> Visit Github</button>
+                 </div>
             <div class="RightSection"><img src="full-stack-developer-image.png" alt="img"></div>
-
-
+<
 
 
         </section>
+        
+       
+       
     </main>
+    <footer>
+
+    <div class="footerrights">www.huzaifa's Portfolio.com  | All rights reserved </div>
+
+    <div class="footer"></div>
+    <div class="first-section"><h3>Huzaifa's Developer Portfolio</h3></div>
+    <div class="second-section"></div>
+    <div class="third-section"></div>
+    <div class="fourthsection"></div>
+</footer>
 
 
 
 
 
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
 
 </body>
 
