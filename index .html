@@ -10,6 +10,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -66,6 +67,8 @@
 
         .firstsection div {
             width: 30%;
+            margin: 0;
+            padding: 0;
         }
 
         .RightSection img {
@@ -114,6 +117,26 @@
             cursor: pointer;
 
         }
+        #contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+background-size: cover;}
+.content{
+    min-width: 800px;
+    padding: 0% ;
+    font-size: larger;
+    color: rgb(155, 94, 211); 
+    margin: 0% 400px;
+    
+}
+
     </style>
 </head>
 
@@ -155,21 +178,11 @@
                     ducimus. Beatae soluta quo maiores minima quae vero qui numquam hic saepe vel, quibusdam corrupti?
                 </p>
             </div>
-            <div class="container">
-                <div class="contactinfo">
-                    <div class="box">
-                        <div class="icon"></div>
-                        <div class="text">
-                            <h3> Address</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur necessitatibus
-                                consequuntur accusamus, consectetur delectus earum laboriosam omnis exercitationem, fuga
-                                ut minima tempore ratione, dolores beatae. Autem facere temporibus harum iure.</p>
-                        </div>
-                    </div>
+            
 
                 </div>
             </div>
-            <form action="text">
+           
             <div class="box">
                 <div class="icon"></div>
                 <div class="text">
@@ -192,16 +205,20 @@
 
 
             </div>
+            <form action="text">
 <div class="inputbox">
     <input type="text" name="" required="required" >
     <span>Email</span>
 </div>
 <div class="inputbox">
-    <input type="text"  name="" required="required"  >
-    <span>Type your <Message ></Message></span>
+  <textarea  required="required" ></textarea>
+    <span>Type your Message..... </span>
 </div>
 
-
+<div class="inputbox">
+  <input type="submit" value="send">
+   
+</div>
 </form>
 
         </section>
